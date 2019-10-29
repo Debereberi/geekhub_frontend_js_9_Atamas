@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atamas</title>
+</head>
+<body style="max-width: 700px">
+<h1>Урок "Формы": теги и их атрибуты.</h1>
+<h2>Расскажите немного о себе...</h2>
+<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышлнные</p>
+	<fieldset >
+		<legend><h3><strong> Коротко о себе</strong></h3></legend>
+		<form action="/" method="">
+		Имя: <input type="text" name="firstName"> <br><br>
+		Фамилия: <input type="text" name="lastName"><br><br>
+		<span>Пол:</span><input type="radio" name="genderMan">мужской <input type="radio" name="genderWoman">женский <br><br>
+		Возраст:<input type="text" name="age" size="3" maxlength="3"> лет
+	</fieldset>
+
+<fieldset>
+	<legend><h3><strong>Подробнее о себе</strong></h3></legend>
+	<input type="radio" name="youngMan">Молодой человек<br>
+	<input type="radio" name="girl">Девушка <br>
+	<input type="date" name="dateOfBirth"> Дата рождения<br>
+	<input type="text" name="famStatus" size="16"> Семейное положение<br>
+	<input type="text" name="socStatus" size="16"> Социальный статус<br>
+	<input type="text" name="livPlace" size="16"> Место жительства<br>
+	
+	<h3>Что вы обычно делаете на выходных:</h3>
+	<input type="checkbox" name="sleep"> Сплю<br>
+	<input type="checkbox" name="playWithFriends"> Гуляю с друзьями<br>
+	<input type="checkbox" name="fishing"> Хожу на рыбалку<br>
+	<input type="checkbox" name="play"> Играю в игры<br>
+
+	<h3>Рассказать о формах в книге, посвященной HTML</h3>
+	<select name="forms">
+		<option>Site frequency:</option>
+		<option>Site frequency:</option>
+		<option>Site frequency:</option>
+	</select>
+	<h3>Сколько книг вы прочитали за свою жизнь:</h3>
+	<input type="radio" name=""> 0-10 <br>
+	<input type="radio" name=""> 11-20<br>
+	<input type="radio" name=""> 21-50<br>
+	<input type="radio" name=""> 50+<br>
+	<h3>Ваши коментарии:</h3>
+	<textarea cols="50" rows="10"></textarea> <br><br>
+	<select size="3">
+		<option>Первая позиция</option>
+		<option>Первая позиция</option>
+		<option>Первая позиция</option>
+	</select>
+	</fieldset>
+
+	<fieldset>
+		<legend><h3><strong> И в заключении</strong></h3></legend>
+		<input type="text" name="" placeholder="Это поле было введено до вас">
+		<h3 style="margin-bottom: 1px">Email:</h3>
+		<input type="Email" name="">
+		<h3 style="margin-bottom: 1px">Хотите подписаться на самую модную рассылку спама?</h3>
+		<span><em>Выберите категории</em></span><br><br>
+		<input type="checkbox" name=""> Оборудование <br>
+		<input type="checkbox" name=""> Как приготовить обеды <br>
+		<input type="checkbox" name=""> Заработай миллион за два дня!
+
+		<h3>На сколько сложная задача:</h3>
+		<input type="radio" name="">Совсем нет <br>
+		<input type="radio" name="">Так себе <br>
+		<input type="radio" name="">Еле справились
+	</fieldset>
+		<br>
+	<input type="submit" name="Submit" value="Отправить">
+</form>
+</body>
+</html>
